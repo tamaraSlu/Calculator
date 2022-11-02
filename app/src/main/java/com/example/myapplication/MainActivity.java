@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
         return (c=='+'||c=='-'||c=='/'||c=='X');
     }
     private Double mergeNumbers(Double num1,Double num2,char operation){
+        if(num1==null && num2!=null)
+        {
+            return num2;
+        }
         switch (operation)
         {
             case '+':
